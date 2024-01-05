@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+
+
+/* ------------ header design for phone start here ----------- */
+
+
+header{
+    width: 100%;
+    z-index: 11;
+}
+.header-manu{
+    width: 100%;
+    height: 68px;
+    border: 1px solid #f3f2f2;
+    background-color: #faf7f7;
+    box-shadow: 0px 0px 10px -7px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.egshop-logo{
+    padding: 14px;
+    cursor: pointer;
+   
+}
+.egshop-img{
+    width: 140px;
+    margin-top: 3.5px;
+}
+.icon-bar{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+#phone-bar-icon, #phone-search-icon, #phone-buy-icon{
+    margin: 0px 13px;
+    cursor: pointer;
+    color: #2ab858;
+}
+.product-icon{
+    width: 100%;
+}
+#phone-bar-icon{
+    font-size: 28px;
+}
+#check{
+    display: none;
+}
+
+.top-categories{
+    position: fixed;
+    width: 65%;
+    height: 100vh;
+    border: 1px solid #2ab858;
+    top: 0;
+    left: -200%;
+    transition: all 0.4s linear;
+    box-shadow: 250px 0px 50px 100px rgb(128, 128, 128, 0.5) ;
+    z-index: 15;
+}
+.top-categories .product-h3{
+    background-color: #2ab858;
+    padding: 10px 5px;
+    font-size: 14px; 
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: -1px;
+    word-spacing: 5px;
+}
+.top-categories .product-manu{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+#phone-bar-icon:hover > .top-categories{
+    left: 0;
+    display: block;
+}
+
+
+
+
+.top-manubar{
+    position: absolute;
+    width: 100%;
+    margin-left:0px;
+    background-color: white;
+}
+.top-manubar ul li{
+    list-style: none;
+    margin-left: 45px;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.top-manubar ul li a{
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: -1px;
+}
+.top-manubar ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.top-manubar ul li a i{
+    color: #11b735;
+    position: absolute;
+    margin-left: -20px;
+}
+.li-hr{
+    border: 1px solid #e4eae5;
+    border-bottom: none;
+}
+.new-img{
+    position: absolute;
+    width: 30px;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+
+
+
+
+
+#up-icon{
+    position: fixed;
+    right: 0;
+    margin-right: 90px;
+    font-size: 30px;
+    margin-top: -18px;
+    color: gray;
+}
+.search-icon{
+    width: 50px;
+}
+.search-icon #phone-search-icon{
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.search-bar{
+    display: none;
+    position: fixed;
+    border: 1px solid #2ab858;
+    height: 50px;
+    width: 100%;
+    left: 4px;
+    top: 75px;
+    background-color: #eceaea;
+    border-radius: 3px;
+    transition: all .4s linear;
+    box-shadow: 0px 0px 5px 1px #808080e3 ;
+} 
+#phone-search-icon:hover > .search-bar{
+    display: block;
+}
+.search-manu{
+    padding: 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-manu .search-input{
+    padding: 10px ;
+    width: 80%;
+    outline: none;
+    border: none;
+    margin-top: 6px;
+    margin-left: -10px;
+    border-end-start-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 15px;
+}
+.search-manu .search-button{
+    border: none;
+    margin-top: 5px;
+    background-color: #2ab858;
+    border-end-end-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+#search-icon{
+    font-size: 25px;
+    padding: 5px 12px;
+    color: white;
+}
+.phone-notification-num{
+    position: absolute;
+    background-color: #f9fffa;
+    border: 2px solid #b02158;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: -15px;
+}
+.buy-icon #phone-buy-icon{
+    font-size: 25px;
+}
+.your-cart{
+    position: fixed;
+    top: 0;
+    right: -200%;
+    width: 65%;
+    height: 100vh;
+    border: 1px solid #2ab858;
+    background-color: white;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    transition: all linear .4s;
+    box-shadow: -250px 0px 50px 100px rgb(128, 128, 128, 0.5) ;
+    z-index: 15;
+}
+#phone-buy-icon:hover > .your-cart{
+    display: block;
+    right: 0;
+}
+.your-cart .your-cart-h3{
+    color: white;
+    background-color: #2ab858;
+    font-size: 15px;
+    padding: 10px 5px;
+}
+.your-cart .cart-manu{
+    background-color: white;
+}
+.header-manu-right{
+    display: none;
+}
+/* ------------ header design for phone end here ----------- */
+
+/* -------------------Middle part --1 design start here----------------------- */
+
+.middle-part-one{
+    width: 100%;
+}
+.container-one{
+    width: 100%;
+}
+.categories-manu{
+    display: none;
+}
+.container-img{
+    position: relative;
+    z-index: -10;
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #11b735;
+    margin-top: 8px;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: img 16s infinite;
+}
+@keyframes img{
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(0%);
+    }
+    30%{
+        transform: translateX(-100%);
+    }    
+    50%{
+        transform: translateX(-100%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+.img-box{
+    width: 100%;
+}
+/*---------------------Middle part --1 design end here------------------------ */
+
+/*---------------------Middle part --2 design start here------------------------ */
+
+.middle-part-two{
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+}
+.product-categories{
+    background-color: #e3f5e7;
+    box-shadow: 0px 0px 5px 2px #98cfa5 inset;
+    height: 160px;
+    padding: 10px 0;
+}
+.product-categories-h2{
+    color: #0fa930;
+    width: 90%;
+    background-color: #eceaea;
+    box-shadow: 0px 0px 5px 2px gainsboro inset;
+    padding: 7px 0;
+    font-size: 23px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.product-categories-h2-hr{
+    border: 2px solid red;
+    width: 42%;
+    margin: 0 auto;
+    margin-top: 8px;
+    border-bottom: none;
+}
+.main-tamplate{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.tamplate-1{
+    display: flex;
+
+}
+.tamplate-2{
+    display: flex;
+}
+.product-categories-name-plat{
+    padding: 5px;
+}
+.product-categories-a{
+    border: 1px solid #0fa930;
+    text-decoration: none;
+    width: 120px;
+}
+ .product-categories-name{
+    font-size: 7px;
+    font-weight: bold;
+    background-color: #0fa930;
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+
+.product-categories-img{
+    display: none;
+}
+/*---------------------Middle part --2 design end here------------------------ */
+
+/*---------------------Middle part --3 design start here------------------------ */
+
+.middle-part-3{
+    width: 100%;
+    background-color: #d1c0a3c7;
+    margin-top: 25px;
+    position: relative;
+}
+.all-offer-product{
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px;
+    padding: 20px 0;
+}
+.all-offer-product-header{
+    width: 97%;
+    margin: 0 auto;
+}
+.all-offer-product-h2{
+    border-radius: 5px;
+    background-color: #0fa930;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+#gift-icon{
+    color: rgb(235, 206, 19);
+}
+.all-offer-product-hr{
+    border: 3px solid #0fa930;
+    border-bottom: none;
+}
+.all-offer-product-box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 5px;
+}
+.all-offer-product-a{
+    color: black;
+    text-decoration: none;
+    border: 2px solid #11b735;
+    width: 33%;
+    margin-left: 5px;
+    background-color: white;
+    padding: 5px;
+}
+.all-offer-product-name{
+    text-align: center;
+    font-size: 11px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.all-offer-product-img{
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+}
+.all-offer-product-img-size{
+    width: 85px;
+    height: 85px;
+}
+
+.all-offer-product-amount-plate{
+    color: #e00808;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.all-offer-product-amount-del{
+    color: #050593cb;
+    font-weight: 500;
+    font-size: 11px;
+}
+/*---------------------Middle part --3 design end here------------------------ */
+
+/*---------------------Middle part --4 design start here------------------------ */
+
+.middle-part-4{
+    width: 100%;
+    margin-top: 15px;
+    
+}
+.new-product-manu{
+    width: 97%;
+    background-color: white;
+    margin: 0 auto;
+    z-index: -2;
+    position: relative;
+}
+.new-product-h3-plate{
+     width: 100%;
+    margin: 0 auto;
+    border: 2px solid #c5c2c2e3;
+    box-shadow: 0px 0px 5px 2px #c7c9c7 inset;
+    border-radius: 3px;
+}
+.new-product-h3{
+    color: #0fa930;
+    text-align: center;
+    padding: 10px 0;
+
+}
+.new-product-h3-hr{
+    width: 25%;
+    border: 2px solid red;
+    border-bottom: none;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.new-product-manubar{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.new-product-list{
+    width: 165px;
+    border: 2px solid #0fa930;
+    margin: 2px;
+}
+.new-product-a{
+    text-decoration: none;
+    color: black;
+}
+.new-product-img-size{
+    width: 145px;
+}
+
+.new-product-name-plate{
+    background-color: #faf7f7;
+    border-top: 1px solid #f5f1f1;
+    padding: 5px;
+    height: 100px;
+}
+.new-product-name{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+.new-product-amount-plate{
+    color: red;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.new-product-amount-del{
+    font-size: 13px;
+    font-weight: 500;
+}
+.new-product-order{
+    text-decoration: none;
+}
+.new-product-order-h3{
+    color: #ffffff;
+    background-color: #17aa37d2;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 1px;
+}
+
+/*---------------------Middle part --4 design end here------------------------ */

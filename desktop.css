@@ -1,0 +1,387 @@
+.col-1 {width: 8.33%;} 
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+/* ------------ header design for desktop start here ----------- */
+
+header{
+    height: 90px;
+}
+.header-manu{
+    width: 78%;
+    box-shadow: 0px 0px 0px 0px;
+    background-color: white;
+    border: 1px solid #eeecec;
+    height: 80px;
+}
+.icon-bar{
+    display: none;
+}
+.header-manu-right{
+    display: block;
+}
+.header-manu-right{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.desktop-search-input{
+    margin-left: 35px;
+    padding: 11px;
+    width: 462px;
+    height: 40px;
+    border: 1px solid #2ab858;
+    border-right: none;
+    border-start-start-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: 15px;
+    outline: none;
+}
+.desktop-search-input::placeholder{
+    color: rgb(255, 1, 1,0.7);
+}
+.desktop-search-button{
+    position: absolute;
+    width: 46px;
+    height: 40px;
+    border: none;
+    background-color: #2ab858;
+    margin-left:-5px;
+    border-end-end-radius: 3px;
+    border-top-right-radius: 3px;
+}
+#desktop-search-icon{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.hotline{
+    margin-left: 90px;
+    background-color: #2ab858;
+    height: 40px;
+    border-radius: 4px;
+}
+.hotline-font{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+.hotline-icon{
+    color: #2ab858;
+    font-size: 10px;
+    width: 20px;
+    height: 21px;
+    background-color: white;
+    border-radius: 20px;
+}
+#call-icon{
+    margin-top: 7px;
+    margin-left: 5px;
+}
+.hotline-num{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 15px;
+}
+.buy-manu{
+    margin-left: 50px;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(205, 11, 11);
+    border-radius: 5px;
+    display: flex;
+}
+.notification-num{
+    position: absolute;
+    margin-left: 50px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    margin-left: 35px;
+    font-size: 10px;
+    border: 1px solid red;
+    font-family: Arial, Helvetica, sans-serif
+    ;
+}
+#buy-icon{
+    color: white;
+    font-size: 25px;
+    margin: 12px 8px;
+}
+.header-manu::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* -------------- header design for desktop end here -------------- */
+
+/* -------------------Middle part --1 design start here----------------------- */
+
+.middle-part-one{
+    width: 100%;
+}
+.container-one{
+    width: 98%;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 0px;
+    box-shadow: 0px 0px 5px 2px #ddd6d6 inset;
+    background-color: rgba(157, 146, 146, 0.1);
+}
+.categories-manu{
+    display: block;
+    position: relative;
+    
+}
+.product-categories-h2{
+    box-shadow: none;
+}
+.top-manubar{
+    position: absolute;
+    width: 43%;
+    margin-left: 140px;
+    background-color: white;
+    
+}
+.top-h2{
+    font-size: 18px;
+    font-family: sans-serif;
+    background-color: #2ab858;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+
+}
+.top-hr{
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 2px;
+}
+
+.top-manubar ul li{
+    list-style: none;
+    margin-left: 45px;
+    padding: 4.5px 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+.top-manubar ul li a{
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: -1px;
+}
+.top-manubar ul li a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}
+.top-manubar ul li a i{
+    color: #11b735;
+    position: absolute;
+    margin-left: -20px;
+}
+.li-hr{
+    border: 1px solid #2ab858;
+    border-bottom: none;
+}
+.new-img{
+    position: absolute;
+    width: 30px;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+.container-img{
+    margin-left: 395px;
+    border: 2px solid #11b735;
+    height: 320px;
+    width: 62.5%;
+    margin-top: -15px;
+    background: url(img/img-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    animation: silder 16s infinite;
+}
+@keyframes silder{
+    50%{
+        background: url(img/img-3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: url(img/img-4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.wrapper{
+    width: 103%;
+    display: none;
+}
+.img-box{
+    margin-top: -15px;
+    
+}
+
+.middle-part-one::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/*---------------------Middle part --1 design end here------------------------ */
+
+/*---------------------Middle part --2 design start here------------------------ */
+
+
+.product-categories{
+    background-color: #ffffff;
+    height: 280px;
+}
+.product-categories-h2{
+    color: #f4f4f4;
+    width: 77.5%;
+    background-color: #35b551;
+    border: 2px solid gainsboro;
+    padding: 3px 0;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: -3px;
+}
+.product-categories-h2-hr{
+    border: 1px solid rgba(255, 0, 0, 0.586);
+    width: 15%;
+    margin: 0 auto;
+    margin-top: 8px;
+    border-bottom: none;
+}
+
+.main-tamplate{
+    margin-left: 168px;
+    margin-top: 20px;
+    display: flex;
+}
+.tamplate-1{
+    display: flex;
+    
+}
+.tamplate-2{
+    display: flex;
+}
+.product-categories-name-plat{
+    padding: 5px;
+}
+.product-categories-a{
+    border: 1px solid #0fa930;
+    text-decoration: none;
+    width: 140px;
+    margin: 0 2px;
+}
+ .product-categories-name{
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #0fa930;
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+.product-categories-img{
+    display: block;
+}
+.product-categories-img-size{
+    width: 133px;
+    height: 132px;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+.middle-part-two::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/*---------------------Middle part --2 design end here------------------------ */
+
+
+/*---------------------Middle part --3 design start here------------------------ */
+
+.middle-part-3{
+    display: none;
+}
+
+.middle-part-3::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*---------------------Middle part --3 design end here------------------------ */
+
+/*---------------------Middle part --4 design start here------------------------ */
+
+.new-product-manu{
+    width: 78%;
+    background-color: white;
+    margin: 0 166px;
+}
+.new-product-h3-plate{
+    background-color: #1faa3dd2;
+    border: none;
+    width: 99%;
+}
+.new-product-h3-plate{
+    box-shadow: none;
+}
+.new-product-h3{
+    color: white;
+    font-size: 22px;
+
+}
+.new-product-h3-hr{
+    width: 10%;
+    border: none;
+    border: 1px solid red;
+    border-bottom: none;
+}
+
+
+.new-product-list{
+    width: 209px;
+    margin-left: 19px;
+    margin-top: 19px;
+    background-color: white;
+}
+.new-product-img-size{
+    width: 195px;
+    height: 200px;
+}
+.middle-part-4::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*---------------------Middle part --4 design end here------------------------ */
